@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.mavenPublish)
 }
 
 kotlin {
@@ -25,6 +26,18 @@ kotlin {
                 implementation(kotlin("test-junit5"))
                 implementation(libs.junit.jupiter.api)
                 runtimeOnly(libs.junit.jupiter.engine)
+            }
+        }
+    }
+
+    val publicationsFromMainHost = listOf(jvm()).map { it.name } + "kotlinMultiplatform"
+    publishing {
+        publications {
+            matching {it.name in publicationsFromMainHost }.all {
+                val targetPublication = this@all
+                tasks.withType<AbstractPublishToMaven>()
+                    .matching { it.publication == targetPublication }
+                    .configureEach { onlyIf { findProperty("isMainHost")  == "true" } }
             }
         }
     }
