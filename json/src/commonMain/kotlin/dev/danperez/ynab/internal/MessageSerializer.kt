@@ -14,6 +14,7 @@ import kotlinx.serialization.encoding.Encoder
 import kotlinx.serialization.json.JsonDecoder
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.contentOrNull
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 
@@ -46,7 +47,11 @@ internal class MessageSerializer<T>(private val dataSerializer: KSerializer<T>):
         }
         val nextObject: JsonObject = element["data"]!!.jsonObject
         val nextElement: JsonElement = nextObject[nextObject.keys.first()]!!
-        return Response.Ok(decoder.json.decodeFromJsonElement(dataSerializer, nextElement))
+        val serverKnowledge = element["server_knowledge"]?.jsonPrimitive
+        return Response.Ok(
+            data = decoder.json.decodeFromJsonElement(dataSerializer, nextElement),
+            serverKnowledge = serverKnowledge?.contentOrNull?.toInt()
+        )
     }
 
     override fun serialize(encoder: Encoder, value: Response<T>) {
