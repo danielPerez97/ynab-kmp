@@ -1,9 +1,9 @@
 package dev.danperez.ynab
 
-import dev.danperez.ynab.internal.MessageSerializer
+import dev.danperez.ynab.internal.ResponseSerializer
 import kotlinx.serialization.Serializable
 
-@Serializable(with = MessageSerializer::class)
+@Serializable(with = ResponseSerializer::class)
 sealed class Response<out T>
 {
     data class Ok<out T>(

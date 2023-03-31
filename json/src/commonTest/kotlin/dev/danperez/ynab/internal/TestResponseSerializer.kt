@@ -12,7 +12,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 @OptIn(ExperimentalSerializationApi::class)
-class TestMessageSerializer: BaseJsonTest()
+class TestResponseSerializer: BaseJsonTest()
 {
     @Test
     fun testMessageSerializerOk()
