@@ -40,7 +40,7 @@ sealed interface Budget {
         @SerialName("category_groups") val categoryGroups: List<CategoryGroup>,
         val categories: List<Category>,
         val months: List<Month>,
-        val transactions: List<Transaction>,
+        val transactions: List<Transaction.Lite>,
         val subtransactions: List<Subtransaction>,
         @SerialName("scheduled_transactions") val scheduledTransactions: List<ScheduledTransaction>,
         @SerialName("scheduled_subtransactions") val scheduledSubtransactions: List<ScheduledSubtransaction>,

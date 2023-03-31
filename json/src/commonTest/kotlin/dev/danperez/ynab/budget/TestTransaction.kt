@@ -15,19 +15,19 @@ class TestTransaction: BaseJsonTest()
     @Test
     fun testTransactionSerializes()
     {
-        val source = "budget/Transaction.json".readBufferedSource()
-        val value = json.decodeFromBufferedSource<Transaction>(source)
+        val source = "budget/TransactionLite.json".readBufferedSource()
+        val value = json.decodeFromBufferedSource<Transaction.Lite>(source)
 
         assertEquals("My Transaction ID", value.id)
     }
 
     @Test
-    fun testTransactionResponseSerializes()
+    fun testTransactionFullSerializes()
     {
-        val source = "budget/TransactionResponse.json".readBufferedSource()
-        val valueResponse = json.decodeFromBufferedSource<Response<Transaction>>(source)
+        val source = "budget/TransactionFull.json".readBufferedSource()
+        val valueResponse = json.decodeFromBufferedSource<Transaction>(source)
 
-        require(valueResponse is Response.Ok<Transaction>)
-        assertEquals("My Transaction ID", valueResponse.data.id)
+        require(valueResponse is Transaction.TransactionFull)
+        assertEquals("My TransactionFull ID", valueResponse.id)
     }
 }
