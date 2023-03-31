@@ -1,8 +1,8 @@
 package dev.danperez.ynab.internal
 
 import dev.danperez.ynab.BaseJsonTest
-import dev.danperez.ynab.budget.Budget
 import dev.danperez.ynab.Response
+import dev.danperez.ynab.budget.Payee
 import dev.danperez.ynab.readBufferedSource
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.okio.decodeFromBufferedSource
@@ -18,14 +18,14 @@ class TestMessageSerializer: BaseJsonTest()
     fun testMessageSerializerOk()
     {
         val source: BufferedSource = "internal/DataResponse.json".readBufferedSource()
-        json.decodeFromBufferedSource<Response<List<Budget>>>(source)
+        json.decodeFromBufferedSource<Response<List<Payee>>>(source)
     }
 
     @Test
     fun testMessageSerializerError()
     {
         val source: BufferedSource = "internal/DataErrorResponse.json".readBufferedSource()
-        val response: Response<List<Budget>> = json.decodeFromBufferedSource(source)
+        val response: Response<List<Payee>> = json.decodeFromBufferedSource(source)
 
         assertTrue { response is Response.Error }
         val error = response as Response.Error

@@ -1,0 +1,213 @@
+{
+  "data": {
+    "budget": {
+      "id": "My Budget Data Budget ID",
+      "name": "string",
+      "last_modified_on": "2023-03-31T16:56:43.776Z",
+      "first_month": "string",
+      "last_month": "string",
+      "date_format": {
+        "format": "string"
+      },
+      "currency_format": {
+        "iso_code": "string",
+        "example_format": "string",
+        "decimal_digits": 0,
+        "decimal_separator": "string",
+        "symbol_first": true,
+        "group_separator": "string",
+        "currency_symbol": "string",
+        "display_symbol": true
+      },
+      "accounts": [
+        {
+          "id": "string",
+          "name": "string",
+          "type": "checking",
+          "on_budget": true,
+          "closed": true,
+          "note": "string",
+          "balance": 0,
+          "cleared_balance": 0,
+          "uncleared_balance": 0,
+          "transfer_payee_id": "string",
+          "direct_import_linked": true,
+          "direct_import_in_error": true,
+          "last_reconciled_at": "2023-03-31T16:56:43.776Z",
+          "debt_original_balance": 0,
+          "debt_interest_rates": {
+            "additionalProp1": 0,
+            "additionalProp2": 0,
+            "additionalProp3": 0
+          },
+          "debt_minimum_payments": {
+            "additionalProp1": 0,
+            "additionalProp2": 0,
+            "additionalProp3": 0
+          },
+          "debt_escrow_amounts": {
+            "additionalProp1": 0,
+            "additionalProp2": 0,
+            "additionalProp3": 0
+          },
+          "deleted": true
+        }
+      ],
+      "payees": [
+        {
+          "id": "string",
+          "name": "string",
+          "transfer_account_id": "string",
+          "deleted": true
+        }
+      ],
+      "payee_locations": [
+        {
+          "id": "string",
+          "payee_id": "string",
+          "latitude": "string",
+          "longitude": "string",
+          "deleted": true
+        }
+      ],
+      "category_groups": [
+        {
+          "id": "string",
+          "name": "string",
+          "hidden": true,
+          "deleted": true
+        }
+      ],
+      "categories": [
+        {
+          "id": "string",
+          "category_group_id": "string",
+          "name": "string",
+          "hidden": true,
+          "original_category_group_id": "string",
+          "note": "string",
+          "budgeted": 0,
+          "activity": 0,
+          "balance": 0,
+          "goal_type": "TB",
+          "goal_day": 0,
+          "goal_cadence": 0,
+          "goal_cadence_frequency": 0,
+          "goal_creation_month": "string",
+          "goal_target": 0,
+          "goal_target_month": "string",
+          "goal_percentage_complete": 0,
+          "goal_months_to_budget": 0,
+          "goal_under_funded": 0,
+          "goal_overall_funded": 0,
+          "goal_overall_left": 0,
+          "deleted": true
+        }
+      ],
+      "months": [
+        {
+          "month": "string",
+          "note": "string",
+          "income": 0,
+          "budgeted": 0,
+          "activity": 0,
+          "to_be_budgeted": 0,
+          "age_of_money": 0,
+          "deleted": true,
+          "categories": [
+            {
+              "id": "string",
+              "category_group_id": "string",
+              "name": "string",
+              "hidden": true,
+              "original_category_group_id": "string",
+              "note": "string",
+              "budgeted": 0,
+              "activity": 0,
+              "balance": 0,
+              "goal_type": "TB",
+              "goal_day": 0,
+              "goal_cadence": 0,
+              "goal_cadence_frequency": 0,
+              "goal_creation_month": "string",
+              "goal_target": 0,
+              "goal_target_month": "string",
+              "goal_percentage_complete": 0,
+              "goal_months_to_budget": 0,
+              "goal_under_funded": 0,
+              "goal_overall_funded": 0,
+              "goal_overall_left": 0,
+              "deleted": true
+            }
+          ]
+        }
+      ],
+      "transactions": [
+        {
+          "id": "string",
+          "date": "string",
+          "amount": 0,
+          "memo": "string",
+          "cleared": "cleared",
+          "approved": true,
+          "flag_color": "red",
+          "account_id": "string",
+          "payee_id": "string",
+          "category_id": "string",
+          "transfer_account_id": "string",
+          "transfer_transaction_id": "string",
+          "matched_transaction_id": "string",
+          "import_id": "string",
+          "import_payee_name": "string",
+          "import_payee_name_original": "string",
+          "debt_transaction_type": "payment",
+          "deleted": true
+        }
+      ],
+      "subtransactions": [
+        {
+          "id": "string",
+          "transaction_id": "string",
+          "amount": 0,
+          "memo": "string",
+          "payee_id": "string",
+          "payee_name": "string",
+          "category_id": "string",
+          "category_name": "string",
+          "transfer_account_id": "string",
+          "transfer_transaction_id": "string",
+          "deleted": true
+        }
+      ],
+      "scheduled_transactions": [
+        {
+          "id": "string",
+          "date_first": "string",
+          "date_next": "string",
+          "frequency": "never",
+          "amount": 0,
+          "memo": "string",
+          "flag_color": "red",
+          "account_id": "string",
+          "payee_id": "string",
+          "category_id": "string",
+          "transfer_account_id": "string",
+          "deleted": true
+        }
+      ],
+      "scheduled_subtransactions": [
+        {
+          "id": "string",
+          "scheduled_transaction_id": "string",
+          "amount": 0,
+          "memo": "string",
+          "payee_id": "string",
+          "category_id": "string",
+          "transfer_account_id": "string",
+          "deleted": true
+        }
+      ]
+    }
+  },
+  "server_knowledge": 0
+}
