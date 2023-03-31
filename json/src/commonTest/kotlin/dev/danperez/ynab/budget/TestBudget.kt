@@ -1,6 +1,7 @@
-package dev.danperez.ynab
+package dev.danperez.ynab.budget
 
-import dev.danperez.ynab.budget.Budget
+import dev.danperez.ynab.BaseJsonTest
+import dev.danperez.ynab.readBufferedSource
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.okio.decodeFromBufferedSource
 import kotlin.test.Test
