@@ -16,7 +16,7 @@ class TestBudget: BaseJsonTest()
     fun testBudgetLiteSerializes()
     {
         val source = "budget/BudgetLite.json".readBufferedSource()
-        val value = json.decodeFromBufferedSource<Budget.Lite>(source)
+        val value = json.decodeFromBufferedSource<Budget>(source)
 
         assertEquals("My Budget", value.name)
     }
@@ -25,9 +25,9 @@ class TestBudget: BaseJsonTest()
     fun testBudgetResponseSerializes()
     {
         val source = "budget/BudgetLiteResponse.json".readBufferedSource()
-        val valueResponse = json.decodeFromBufferedSource<Response<Budget.Lite>>(source)
+        val valueResponse = json.decodeFromBufferedSource<Response<Budget>>(source)
 
-        require(valueResponse is Response.Ok<Budget.Lite>)
+        require(valueResponse is Response.Ok<Budget>)
         assertEquals("My Budget", valueResponse.data.name)
     }
 }

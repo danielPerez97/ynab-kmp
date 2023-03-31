@@ -1,11 +1,12 @@
 package dev.danperez.ynab.budget
 
 import dev.danperez.ynab.account.Account
+import dev.danperez.ynab.budget.internal.BudgetSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 
-@Serializable()
+@Serializable(BudgetSerializer::class)
 sealed interface Budget {
     val id: String
     val name: String
