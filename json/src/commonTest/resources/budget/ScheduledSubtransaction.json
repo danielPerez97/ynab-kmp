@@ -1,0 +1,10 @@
+{
+  "id": "My Scheduled Subtransaction ID",
+  "scheduled_transaction_id": "string",
+  "amount": 0,
+  "memo": "string",
+  "payee_id": "string",
+  "category_id": "string",
+  "transfer_account_id": "string",
+  "deleted": true
+}
