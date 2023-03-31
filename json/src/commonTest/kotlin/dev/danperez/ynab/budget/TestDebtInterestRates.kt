@@ -16,18 +16,18 @@ class TestDebtInterestRates: BaseJsonTest()
     fun testDebtInterestRateSerializes()
     {
         val source = "budget/DebtInterestRates.json".readBufferedSource()
-        val debtInterestRate = json.decodeFromBufferedSource<DebtInterestRates>(source)
+        val value = json.decodeFromBufferedSource<DebtInterestRates>(source)
 
-        assertEquals(0, debtInterestRate.additionalProp1)
+        assertEquals(0, value.additionalProp1)
     }
 
     @Test
     fun testDebtInterestRateResponseSerializes()
     {
         val source = "budget/DebtInterestRatesResponse.json".readBufferedSource()
-        val debtInterestRateMessage = json.decodeFromBufferedSource<Response<DebtInterestRates>>(source)
+        val valueResponse = json.decodeFromBufferedSource<Response<DebtInterestRates>>(source)
 
-        require(debtInterestRateMessage is Response.Ok<DebtInterestRates>)
-        assertEquals(0, debtInterestRateMessage.data.additionalProp1)
+        require(valueResponse is Response.Ok<DebtInterestRates>)
+        assertEquals(0, valueResponse.data.additionalProp1)
     }
 }

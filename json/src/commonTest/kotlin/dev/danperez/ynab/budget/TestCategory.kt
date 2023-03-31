@@ -25,9 +25,9 @@ class TestCategory: BaseJsonTest()
     fun testCategoryResponseSerializes()
     {
         val source = "budget/CategoryResponse.json".readBufferedSource()
-        val userMessage = json.decodeFromBufferedSource<Response<Category>>(source)
+        val categoryResponse = json.decodeFromBufferedSource<Response<Category>>(source)
 
-        require(userMessage is Response.Ok<Category>)
-        assertEquals("string", userMessage.data.name)
+        require(categoryResponse is Response.Ok<Category>)
+        assertEquals("string", categoryResponse.data.name)
     }
 }

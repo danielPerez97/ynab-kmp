@@ -13,21 +13,21 @@ class TestPayeeLocation: BaseJsonTest()
 {
 
     @Test
-    fun testPayeeSerializes()
+    fun testPayeeLocationSerializes()
     {
         val source = "budget/PayeeLocation.json".readBufferedSource()
-        val payee = json.decodeFromBufferedSource<PayeeLocation>(source)
+        val value = json.decodeFromBufferedSource<PayeeLocation>(source)
 
-        assertEquals("My Payee ID", payee.payeeId)
+        assertEquals("My Payee ID", value.payeeId)
     }
 
     @Test
-    fun testPayeeResponseSerializes()
+    fun testPayeeLocationResponseSerializes()
     {
         val source = "budget/PayeeLocationResponse.json".readBufferedSource()
-        val userMessage = json.decodeFromBufferedSource<Response<PayeeLocation>>(source)
+        val valueResponse = json.decodeFromBufferedSource<Response<PayeeLocation>>(source)
 
-        require(userMessage is Response.Ok<PayeeLocation>)
-        assertEquals("My Payee ID", userMessage.data.payeeId)
+        require(valueResponse is Response.Ok<PayeeLocation>)
+        assertEquals("My Payee ID", valueResponse.data.payeeId)
     }
 }

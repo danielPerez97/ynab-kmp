@@ -16,18 +16,18 @@ class TestCurrencyFormat: BaseJsonTest()
     fun testCurrencyFormatSerializes()
     {
         val source = "budget/CurrencyFormat.json".readBufferedSource()
-        val currencyFormat = json.decodeFromBufferedSource<CurrencyFormat>(source)
+        val value = json.decodeFromBufferedSource<CurrencyFormat>(source)
 
-        assertEquals("USD", currencyFormat.isoCode)
+        assertEquals("USD", value.isoCode)
     }
 
     @Test
     fun testCurrencyFormatResponseSerializes()
     {
         val source = "budget/CurrencyFormatResponse.json".readBufferedSource()
-        val userMessage = json.decodeFromBufferedSource<Response<CurrencyFormat>>(source)
+        val valueResponse = json.decodeFromBufferedSource<Response<CurrencyFormat>>(source)
 
-        require(userMessage is Response.Ok<CurrencyFormat>)
-        assertEquals("USD", userMessage.data.isoCode)
+        require(valueResponse is Response.Ok<CurrencyFormat>)
+        assertEquals("USD", valueResponse.data.isoCode)
     }
 }

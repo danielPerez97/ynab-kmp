@@ -25,9 +25,9 @@ class TestDebtEscrowAmounts: BaseJsonTest()
     fun testDebtEscrowAmountsResponseSerializes()
     {
         val source = "budget/DebtEscrowAmountsResponse.json".readBufferedSource()
-        val debtEscrowAmountsMessage = json.decodeFromBufferedSource<Response<DebtInterestRates>>(source)
+        val valueResponse = json.decodeFromBufferedSource<Response<DebtInterestRates>>(source)
 
-        require(debtEscrowAmountsMessage is Response.Ok<DebtInterestRates>)
-        assertEquals(0, debtEscrowAmountsMessage.data.additionalProp1)
+        require(valueResponse is Response.Ok<DebtInterestRates>)
+        assertEquals(0, valueResponse.data.additionalProp1)
     }
 }
