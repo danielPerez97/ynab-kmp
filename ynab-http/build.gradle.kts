@@ -1,6 +1,7 @@
 plugins {
     id("java-library")
     kotlin("jvm")
+    alias(libs.plugins.mavenPublish)
 }
 
 dependencies {
