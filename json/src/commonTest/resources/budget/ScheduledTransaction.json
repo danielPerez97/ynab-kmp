@@ -1,0 +1,14 @@
+{
+  "id": "My Scheduled Transaction ID",
+  "date_first": "string",
+  "date_next": "string",
+  "frequency": "never",
+  "amount": 0,
+  "memo": "string",
+  "flag_color": "red",
+  "account_id": "string",
+  "payee_id": "string",
+  "category_id": "string",
+  "transfer_account_id": "string",
+  "deleted": true
+}
