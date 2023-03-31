@@ -14,7 +14,7 @@ class TestUser: BaseJsonTest()
     @Test
     fun testUserSerializes()
     {
-        val source = "User.json".readBufferedSource()
+        val source = "user/User.json".readBufferedSource()
         val user = json.decodeFromBufferedSource<User>(source)
 
         assertEquals("0", user.id)
@@ -23,7 +23,7 @@ class TestUser: BaseJsonTest()
     @Test
     fun testUserResponseSerializes()
     {
-        val source = "UserResponse.json".readBufferedSource()
+        val source = "user/UserResponse.json".readBufferedSource()
         val userMessage = json.decodeFromBufferedSource<Response<User>>(source)
 
         require(userMessage is Response.Ok<User>)

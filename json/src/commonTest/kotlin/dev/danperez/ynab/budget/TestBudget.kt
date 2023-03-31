@@ -14,7 +14,7 @@ class TestBudget: BaseJsonTest()
     @Test
     fun testBudgetSerializes()
     {
-        val source = "Budget.json".readBufferedSource()
+        val source = "budget/Budget.json".readBufferedSource()
         val budget = json.decodeFromBufferedSource<Budget>(source)
 
         assertEquals("My Budget", budget.name)

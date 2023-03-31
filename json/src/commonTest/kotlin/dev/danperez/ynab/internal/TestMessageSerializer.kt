@@ -17,14 +17,14 @@ class TestMessageSerializer: BaseJsonTest()
     @Test
     fun testMessageSerializerOk()
     {
-        val source: BufferedSource = "DataResponse.json".readBufferedSource()
+        val source: BufferedSource = "internal/DataResponse.json".readBufferedSource()
         json.decodeFromBufferedSource<Response<List<Budget>>>(source)
     }
 
     @Test
     fun testMessageSerializerError()
     {
-        val source: BufferedSource = "DataErrorResponse.json".readBufferedSource()
+        val source: BufferedSource = "internal/DataErrorResponse.json".readBufferedSource()
         val response: Response<List<Budget>> = json.decodeFromBufferedSource(source)
 
         assertTrue { response is Response.Error }
