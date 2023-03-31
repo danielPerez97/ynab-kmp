@@ -1,0 +1,11 @@
+{
+  "data": {
+    "budget": {
+      "id":"6ee704d9-ee24-4c36-b1a6-cb8ccf6a216c",
+      "name":"My Budget",
+      "last_modified_on":"2017-12-01T12:40:37.867Z",
+      "first_month":"2017-11-01",
+      "last_month":"2017-11-01"
+    }
+  }
+}
