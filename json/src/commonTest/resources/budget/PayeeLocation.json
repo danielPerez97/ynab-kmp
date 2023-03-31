@@ -1,0 +1,7 @@
+{
+  "id": "string",
+  "payee_id": "My Payee ID",
+  "latitude": "string",
+  "longitude": "string",
+  "deleted": true
+}
