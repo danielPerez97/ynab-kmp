@@ -5,8 +5,11 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":json"))
+
     implementation(platform(libs.okhttp.bom))
     implementation(libs.okhttp.lib)
+    implementation(libs.retrofit)
 
     testImplementation(libs.okhttp.mockwebserver)
     testImplementation(kotlin("test-junit5"))
