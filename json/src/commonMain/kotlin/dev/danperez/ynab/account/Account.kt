@@ -22,8 +22,8 @@ data class Account(
     @SerialName("direct_import_in_error") val directImportInError: Boolean,
     @SerialName("last_reconciled_at") val lastReconciledAt: String,
     @SerialName("debt_original_balance") val debtOriginalBalance: Int,
-    @SerialName("debt_interest_rates")val debtInterestRates: DebtInterestRates,
-    @SerialName("debt_minimum_payments")val debtMinimumPayments: DebtMinimumPayments,
-    @SerialName("debt_escrow_amounts")val debtEscrowAmounts: DebtEscrowAmounts,
+    @SerialName("debt_interest_rates") val debtInterestRates: DebtInterestRates,
+    @SerialName("debt_minimum_payments") val debtMinimumPayments: DebtMinimumPayments,
+    @SerialName("debt_escrow_amounts") val debtEscrowAmounts: DebtEscrowAmounts,
     val deleted: Boolean
 )
