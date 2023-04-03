@@ -1,4 +1,4 @@
-package dev.danperez.ynab.http
+package dev.danperez.ynab.http.interceptor
 
 import okhttp3.Interceptor
 import okhttp3.Response

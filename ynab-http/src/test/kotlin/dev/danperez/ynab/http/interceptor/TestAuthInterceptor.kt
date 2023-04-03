@@ -1,5 +1,6 @@
-package dev.danperez.ynab.http
+package dev.danperez.ynab.http.interceptor
 
+import dev.danperez.ynab.http.interceptor.AuthInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.mockwebserver.MockResponse
