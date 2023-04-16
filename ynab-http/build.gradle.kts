@@ -10,7 +10,10 @@ dependencies {
     implementation(platform(libs.okhttp.bom))
     implementation(libs.okhttp.lib)
     implementation(libs.retrofit)
+    implementation(libs.kotlin.serialization.json)
+    implementation(libs.kotlin.serialization.json.converter)
 
+    testImplementation(libs.kotlin.coroutines.test)
     testImplementation(libs.okhttp.mockwebserver)
     testImplementation(kotlin("test-junit5"))
     testImplementation(libs.junit.jupiter.api)
