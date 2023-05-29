@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Month(
     val month: String,
-    val note: String,
+    val note: String?,
     val income: Int,
     val budgeted: Int,
     val activity: Int,
