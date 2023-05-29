@@ -1,6 +1,6 @@
 package dev.danperez.ynab.http
 
-import dev.danperez.ynab.Response
+import dev.danperez.ynab.json.Response
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Assertions.assertEquals
