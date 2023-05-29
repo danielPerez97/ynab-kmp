@@ -9,6 +9,10 @@ Multiplatform Features][2] so it can be used on Android with iOS and JS planned 
 Currently there are two modules: 'json' and 'ynab-http'. 'json' holds all the JSON data classes using kotlinx.serialization, and 'http' is a JVM/Android 
 only module that will provide Okhttp interceptors and Retrofit interfaces for use with the YNAB developer API.
 
+To test, run the following:  
+`./gradlew :json:clean :json:check`  
+`./gradlew :ynab-http:clean :ynab-http:check`
+
 # Current Goals
 * Provide API's that can fully support [Personal Access Tokens][3] and [OAuth Applications][4] per the YNAB documentation.
 * Have the project be feature-complete enough to build an Android App that provides a widget to view a users age of money
