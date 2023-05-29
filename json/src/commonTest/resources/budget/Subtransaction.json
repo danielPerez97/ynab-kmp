@@ -3,11 +3,11 @@
   "transaction_id": "string",
   "amount": 0,
   "memo": "string",
-  "payee_id": "string",
+  "payee_id": null,
   "payee_name": "string",
   "category_id": "string",
   "category_name": "string",
   "transfer_account_id": "string",
-  "transfer_transaction_id": "string",
+  "transfer_transaction_id": null,
   "deleted": true
 }
