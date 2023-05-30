@@ -1,0 +1,35 @@
+{
+  "data": {
+    "budget": {
+      "id": "fake budget id",
+      "name": "My Fake Budget",
+      "last_modified_on": "2000-01-01T18:00:00+00:00",
+      "date_format": {
+        "format": "MM/DD/YYYY"
+      },
+      "currency_format": {
+        "iso_code": "USD",
+        "example_format": "123,456.78",
+        "decimal_digits": 2,
+        "decimal_separator": ".",
+        "symbol_first": true,
+        "group_separator": ",",
+        "currency_symbol": "$",
+        "display_symbol": true
+      },
+      "first_month": "2020-07-01",
+      "last_month": "2023-06-01",
+      "accounts": [],
+      "payees": [],
+      "payee_locations": [],
+      "category_groups": [],
+      "categories": [],
+      "months": [],
+      "transactions": [],
+      "subtransactions": [],
+      "scheduled_transactions": [],
+      "scheduled_subtransactions": []
+    },
+    "server_knowledge": 0
+  }
+}
