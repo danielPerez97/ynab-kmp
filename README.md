@@ -45,9 +45,9 @@ https://api.ynab.com/v1#/
 - [X] GET /budgets/{budget_id}/payees/{payee_id}
 
 ### Payee Locations(PayeeLocationsService.kt)
-- [ ] GET /budgets/{budget_id}/payee_locations
-- [ ] GET /budgets/{budget_id}/payee_locations/{payee_location_id}
-- [ ] GET /budgets/{budget_id}/payees/{payee_id}/payee_locations
+- [X] GET /budgets/{budget_id}/payee_locations
+- [X] GET /budgets/{budget_id}/payee_locations/{payee_location_id}
+- [X] GET /budgets/{budget_id}/payees/{payee_id}/payee_locations
 
 ### Months(MonthsService.kt)
 - [X] GET /budgets/{budget_id}/months

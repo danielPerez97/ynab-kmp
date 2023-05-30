@@ -1,0 +1,13 @@
+{
+  "data": {
+    "payee_locations": [
+      {
+        "id": "string",
+        "payee_id": "string",
+        "latitude": "string",
+        "longitude": "string",
+        "deleted": true
+      }
+    ]
+  }
+}
