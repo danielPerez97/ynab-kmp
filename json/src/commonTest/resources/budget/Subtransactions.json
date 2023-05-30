@@ -1,0 +1,732 @@
+[
+  {
+    "id": "1cf6ed4b-074f-4050-9982-ac4c96e3da4a",
+    "transaction_id": "a8f3dd16-1533-4c0d-810e-bb7ea7fac2da",
+    "amount": -375000,
+    "memo": "Sony XM4",
+    "payee_id": "140ba2d9-d917-49c8-b725-bec3a78b06f8",
+    "category_id": "156383d2-97c7-4ac1-b208-1803b3f6887c",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a5278139-7480-4159-aa16-bffc01889138",
+    "transaction_id": "51a277ba-0946-452c-851c-d71a1b526360",
+    "amount": -20860,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "447625cf-035b-488e-9fb0-5fb52537a1d4",
+    "transaction_id": "11b2e0dc-ca52-4ce4-bff5-9d155b63bb90",
+    "amount": -46030,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "72840204-2fda-44f3-b7a6-e529f5fc968d",
+    "transaction_id": "deab32e8-bfa5-4e9a-894f-28a28b89f453",
+    "amount": -20000,
+    "memo": "Fish City Grill",
+    "payee_id": "3434e070-02cc-4835-a8f8-e61464347c8f",
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "da4dde54-9478-4482-8b4f-e35b7bc5b0ed",
+    "transaction_id": "58c320b1-950f-4bb6-a773-d6d267ab4071",
+    "amount": -2080,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "300fb5a5-a68f-4bbe-80f7-ef34ab431e42",
+    "transaction_id": "e8ce8265-f0d0-4ed6-afbe-91e7e4e5e1c0",
+    "amount": -47030,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "bd335f29-dd2b-4e56-8cf8-b9a78417351c",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a47ce2d8-ba7b-45d6-86a0-aeaec8560493",
+    "transaction_id": "be894fd6-9941-4fdb-9763-3c4e4bfd9675",
+    "amount": -2240,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "26b02c84-88e1-4151-b591-d5261832e794",
+    "transaction_id": "12b5f64d-e947-416d-9360-6c329ae4aca5",
+    "amount": -300000,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "f366813d-8382-4281-ba6a-c45396829da7",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "48167c61-653f-44f5-a9db-cd26d17f15ee",
+    "transaction_id": "be894fd6-9941-4fdb-9763-3c4e4bfd9675",
+    "amount": -13660,
+    "memo": "",
+    "payee_id": "501cc13f-968b-4831-b678-31dec7995d23",
+    "category_id": "d39b4c8e-def5-43b1-b46d-af2bd7e28ace",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "040e8950-83a9-4acd-a215-5a9f5be61e7c",
+    "transaction_id": "e2277e6a-f227-49a1-958d-179b92a54773",
+    "amount": -29410,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "3baa3b57-11ab-4835-9a45-2e4fd5ef0490",
+    "transaction_id": "11b2e0dc-ca52-4ce4-bff5-9d155b63bb90",
+    "amount": -63460,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "d1a3db28-1b75-4428-a7db-e8a321caacf2",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "d7b148fd-1104-45f8-98cf-c9821dd9de3a",
+    "transaction_id": "216ccbd2-1e74-4560-86c8-f51802f6d2d2",
+    "amount": -60000,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "233e5adb-2097-49e7-a4d3-f560f0bc6302",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "427d2a02-815d-4d14-843e-f1dde27b1607",
+    "transaction_id": "c78eeccc-0e6a-4d1e-ac05-7bff45b82533",
+    "amount": -1000,
+    "memo": "",
+    "payee_id": "916b7dee-bd5b-436e-adda-ae71669084fe",
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "b4c2da7d-581e-46b3-a810-860c0ee2b831",
+    "transaction_id": "55aa3b5f-4240-4a28-a569-6ea5d32af22c",
+    "amount": -28320,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "d1a3db28-1b75-4428-a7db-e8a321caacf2",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "6229bc5b-8b15-467b-bbc4-534830fa3e29",
+    "transaction_id": "a9a4f3bb-91c0-479d-879e-cc31e991dd96",
+    "amount": -14260,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a6ac8098-0ada-49de-a69f-54055f2b5222",
+    "transaction_id": "669f90a2-dd44-494d-ad17-3b43845c052a",
+    "amount": -4670,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "2689be27-31cf-4dd5-b494-8cb2ae6c3624",
+    "transaction_id": "bf3cd718-bcc5-4951-90e6-c0c116e98136",
+    "amount": -13790,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "075826e9-5db0-4b21-bab7-201d5fda4b34",
+    "transaction_id": "ef6fa054-c632-4ba0-9589-29a85a23740a",
+    "amount": -50750,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "46e3169d-369b-460b-8dcf-646fa6a6a3ae",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "304d9462-fe7c-4944-96c3-52b03d9125c1",
+    "transaction_id": "c16768a8-cfa5-4689-ba72-24515b8cce5f",
+    "amount": -6690,
+    "memo": "Fossil Cove Orange Cream",
+    "payee_id": null,
+    "category_id": "d39b4c8e-def5-43b1-b46d-af2bd7e28ace",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "c11d75e2-3e56-43fa-8f6b-0f124c4ca777",
+    "transaction_id": "6b2ca4dc-baa2-47b1-b4d6-0aad5abdd755",
+    "amount": -76580,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "d39b4c8e-def5-43b1-b46d-af2bd7e28ace",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "88d0aaf2-8a1c-4708-bdeb-c6bd4f629cda",
+    "transaction_id": "3820c076-6be2-4a5d-a595-a14be1a39be0",
+    "amount": -35370,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "80d58e8e-b139-4bdf-ae62-a611467fd35f",
+    "transaction_id": "ecf86f74-baeb-47eb-9de1-9121cdad55a6",
+    "amount": -4510,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "8c28f39c-8164-4ccd-9803-ba5ba91d4a2c",
+    "transaction_id": "1b557465-5f1c-4d3e-a9d5-a1f0352dd4ae",
+    "amount": -19160,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "17b8b374-bb50-4fee-b8ea-88a45ac377d4",
+    "transaction_id": "55aa3b5f-4240-4a28-a569-6ea5d32af22c",
+    "amount": -38410,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "bd335f29-dd2b-4e56-8cf8-b9a78417351c",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "e3328524-73a7-4b82-9f38-222781d6d72a",
+    "transaction_id": "2cca9843-f864-4e9f-b6d0-8e06189553dd",
+    "amount": -480,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "945185b9-8146-4a6e-ba7c-4a6af50e73a5",
+    "transaction_id": "deea6530-fa4d-45f1-beb1-87df02639837",
+    "amount": -60000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "60b1d2f0-7137-4b04-863e-d8f8ef060557",
+    "transaction_id": "c78eeccc-0e6a-4d1e-ac05-7bff45b82533",
+    "amount": -179000,
+    "memo": "",
+    "payee_id": "916b7dee-bd5b-436e-adda-ae71669084fe",
+    "category_id": "46e3169d-369b-460b-8dcf-646fa6a6a3ae",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "aa82417a-f4c9-4786-8448-273d0c38ee70",
+    "transaction_id": "ecf86f74-baeb-47eb-9de1-9121cdad55a6",
+    "amount": -60000,
+    "memo": "Books",
+    "payee_id": "0b1c814c-5786-4a02-a98f-4e777f51103d",
+    "category_id": "d5ad0e0c-430f-4555-86ec-6ea96a38b87b",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "788de02d-29f8-4e76-80fe-9b7d5a435a61",
+    "transaction_id": "dd18b59c-c0dc-47f9-a72f-5c8df226555b",
+    "amount": -27200,
+    "memo": "Thai Cook Book",
+    "payee_id": "0b1c814c-5786-4a02-a98f-4e777f51103d",
+    "category_id": "7faa5f70-0509-4f22-b11e-b57cb4e01b67",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "32e9798d-f9f6-41d7-97cc-010dd289eee4",
+    "transaction_id": "31dc35cc-390f-46e3-ab46-b0b23c864e38",
+    "amount": -90,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "fc10b6cc-ee5c-4020-b616-62ebdb9b534d",
+    "transaction_id": "e94ea074-40f7-45a7-8116-b4ca3dfb08cc",
+    "amount": -1230,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "54f3b310-0ebb-4202-8e08-40a3c2842e70",
+    "transaction_id": "2cca9843-f864-4e9f-b6d0-8e06189553dd",
+    "amount": -25840,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "b0653c02-1ea6-4766-affd-46c2d0833c4b",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "9e588c55-ee34-456e-8ccb-32ad18c307f6",
+    "transaction_id": "27bf737e-0cd4-4216-8d57-837a9852cd44",
+    "amount": -21980,
+    "memo": "WoW 6 Months",
+    "payee_id": "15bb6dae-05d4-4c03-9e55-d3f5fa97d318",
+    "category_id": "680c8f86-1894-4e75-9fc4-a0b1ffbe15a5",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "b715686c-3ecd-4cd2-a569-9fccdc9fa11b",
+    "transaction_id": "31dc35cc-390f-46e3-ab46-b0b23c864e38",
+    "amount": -40360,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a638339b-25d1-4d3b-a78a-6b7f73c10520",
+    "transaction_id": "6b2ca4dc-baa2-47b1-b4d6-0aad5abdd755",
+    "amount": -100000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "953600ba-1bcc-48ef-af42-f893bea01b53",
+    "transaction_id": "982f5678-4fa2-4f90-8b70-5cd77c7905ba",
+    "amount": -9660,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "53715984-518d-41e5-a52e-fba27c835a04",
+    "transaction_id": "4ccc85f5-5b49-499a-8be6-dcf0107ed67c",
+    "amount": -10020,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "a53148fd-bf0e-41bd-80f8-4fb06446bc86",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "059abf30-a11a-41b5-a5e1-993bbcc344bd",
+    "transaction_id": "748a9549-2402-4c47-83e3-dec98e653892",
+    "amount": -184000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "be8a13fc-8987-466e-a575-da8ffc8c6d29",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "189d18e1-9abc-431a-a616-4cc92d0f9bd7",
+    "transaction_id": "ef6fa054-c632-4ba0-9589-29a85a23740a",
+    "amount": -60000,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "6382b0aa-c085-46d2-87e6-908b95d00dff",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "766683b5-e466-470a-893d-e1099d4600a3",
+    "transaction_id": "e8ce8265-f0d0-4ed6-afbe-91e7e4e5e1c0",
+    "amount": -12030,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "46e3169d-369b-460b-8dcf-646fa6a6a3ae",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "c1112970-9af1-4cbe-8707-8fb580755a2b",
+    "transaction_id": "bf3cd718-bcc5-4951-90e6-c0c116e98136",
+    "amount": -22530,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "4318972e-c63d-42c8-8981-17b058a35888",
+    "transaction_id": "1b557465-5f1c-4d3e-a9d5-a1f0352dd4ae",
+    "amount": -74000,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "a978b8ce-5330-4c06-9297-d899bd0216ef",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a6e55709-9d78-4e39-b6e2-38a8e79f983b",
+    "transaction_id": "58c320b1-950f-4bb6-a773-d6d267ab4071",
+    "amount": -112000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "6382b0aa-c085-46d2-87e6-908b95d00dff",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "38461927-e107-438f-a7d2-2c3dc083310b",
+    "transaction_id": "dd18b59c-c0dc-47f9-a72f-5c8df226555b",
+    "amount": -200000,
+    "memo": "Kettle, French Press",
+    "payee_id": "0b1c814c-5786-4a02-a98f-4e777f51103d",
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "5680d4df-1721-4921-a875-330dc21aa0e2",
+    "transaction_id": "447e746e-615e-47e2-a6c1-4cd88134468f",
+    "amount": -35000,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "6ddef1d9-8893-4f92-a921-92dd067bff7a",
+    "transaction_id": "a9a4f3bb-91c0-479d-879e-cc31e991dd96",
+    "amount": -10000,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "d39b4c8e-def5-43b1-b46d-af2bd7e28ace",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "bb20a20b-b853-43d6-8374-294cfb648d46",
+    "transaction_id": "f849a0ea-30ab-420a-8404-6c04926a6570",
+    "amount": -2880,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a6629c35-dc23-4446-a8ce-5994670e137e",
+    "transaction_id": "669f90a2-dd44-494d-ad17-3b43845c052a",
+    "amount": -17220,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a7725167-edb1-45cd-8049-4da1b862289b",
+    "transaction_id": "deea6530-fa4d-45f1-beb1-87df02639837",
+    "amount": -2020,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "16c937c3-167a-40c9-a063-99e337b2c1a6",
+    "transaction_id": "4ccc85f5-5b49-499a-8be6-dcf0107ed67c",
+    "amount": -480,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "09f16b22-25d5-40af-946f-3f7d37fa3e01",
+    "transaction_id": "e94ea074-40f7-45a7-8116-b4ca3dfb08cc",
+    "amount": -56600,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "c5b6d557-b1c5-4073-be08-a69fc03fdc4a",
+    "transaction_id": "033494c2-f51f-4322-9b65-7b411d37a7d6",
+    "amount": -28160,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "a801fd40-e5fd-4810-a9be-6ad7a10c0c1e",
+    "transaction_id": "12b5f64d-e947-416d-9360-6c329ae4aca5",
+    "amount": -5000,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "1b8a57e1-06eb-4aff-a503-e1d6ef82d32b",
+    "transaction_id": "7610107e-5f98-4381-b86f-81f975f35f53",
+    "amount": -3400,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "552ba573-5567-4f15-b0e4-046d75316b56",
+    "transaction_id": "c16768a8-cfa5-4689-ba72-24515b8cce5f",
+    "amount": -7710,
+    "memo": "Fossil Cove Orange Cream",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "78b75c80-31d1-427c-bc74-4b09528d6eae",
+    "transaction_id": "748a9549-2402-4c47-83e3-dec98e653892",
+    "amount": -7670,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ab42e638-9062-4810-a7e7-0feef81ab61c",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "e0bb3fb6-22a9-472d-986d-cd57c588eba9",
+    "transaction_id": "27bf737e-0cd4-4216-8d57-837a9852cd44",
+    "amount": -55960,
+    "memo": "WoW 6 Months",
+    "payee_id": "15bb6dae-05d4-4c03-9e55-d3f5fa97d318",
+    "category_id": "86b82317-a0bf-4a1c-bd8d-19c939ad5289",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "de0b282e-a62a-4d91-9adc-071140f74471",
+    "transaction_id": "033494c2-f51f-4322-9b65-7b411d37a7d6",
+    "amount": -10970,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "9ccdf1c3-c0e0-4f5f-bad6-f063f1bad600",
+    "transaction_id": "a1367dd8-e007-49bd-9bd4-096ca2e9ca83",
+    "amount": -6870,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "680c8f86-1894-4e75-9fc4-a0b1ffbe15a5",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "9927fc51-7212-4630-aae9-3e7729f5fbda",
+    "transaction_id": "31dc35cc-390f-46e3-ab46-b0b23c864e38",
+    "amount": -35260,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "aae54222-cf05-49a9-a457-21d496487626",
+    "transaction_id": "216ccbd2-1e74-4560-86c8-f51802f6d2d2",
+    "amount": -8290,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "81232b7b-c736-4817-a700-78f0a9d0b854",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "1a76046e-6619-4d50-9baa-93b55d5698df",
+    "transaction_id": "a1367dd8-e007-49bd-9bd4-096ca2e9ca83",
+    "amount": -3880,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "085e76b4-890f-4310-a3bd-778dbfbccd00",
+    "transaction_id": "e2277e6a-f227-49a1-958d-179b92a54773",
+    "amount": -40000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "1aa2f2c4-6700-44b5-bf90-ff0b2eb9f377",
+    "transaction_id": "7610107e-5f98-4381-b86f-81f975f35f53",
+    "amount": -50000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "d0504d72-ce3d-45bb-bb15-3e959e34d0eb",
+    "transaction_id": "f849a0ea-30ab-420a-8404-6c04926a6570",
+    "amount": -60000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "19b1ad11-b52a-45cb-9624-34243ade0bbf",
+    "transaction_id": "5039ba21-ed57-4731-beda-881b46d96b39",
+    "amount": -170000,
+    "memo": "Jetbrains All Products Pack",
+    "payee_id": null,
+    "category_id": "a978b8ce-5330-4c06-9297-d899bd0216ef",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "541d50a2-489c-42a6-a3b6-716e34852f97",
+    "transaction_id": "982f5678-4fa2-4f90-8b70-5cd77c7905ba",
+    "amount": -70000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "229859e1-4023-4bb2-9646-40d0110b4bed",
+    "transaction_id": "deab32e8-bfa5-4e9a-894f-28a28b89f453",
+    "amount": -39240,
+    "memo": "Fish City Grill",
+    "payee_id": "3434e070-02cc-4835-a8f8-e61464347c8f",
+    "category_id": "d39b4c8e-def5-43b1-b46d-af2bd7e28ace",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "4acb67d0-bb8c-4cf1-830a-9284b74cd2fb",
+    "transaction_id": "3820c076-6be2-4a5d-a595-a14be1a39be0",
+    "amount": -48200,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "f60f3170-de38-4bcf-8801-7f87e57ce643",
+    "transaction_id": "447e746e-615e-47e2-a6c1-4cd88134468f",
+    "amount": -2680,
+    "memo": null,
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "7d36177c-5bfc-4618-836a-f9398e8e7cca",
+    "transaction_id": "5039ba21-ed57-4731-beda-881b46d96b39",
+    "amount": -16750,
+    "memo": "Jetbrains All Products Pack",
+    "payee_id": null,
+    "category_id": "8cb79c9a-d01f-43db-bf0a-3cf644cb8b59",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "e753b99c-e9c0-42f1-a4c2-c293543fb69e",
+    "transaction_id": "a8f3dd16-1533-4c0d-810e-bb7ea7fac2da",
+    "amount": -6860,
+    "memo": "Sony XM4",
+    "payee_id": "140ba2d9-d917-49c8-b725-bec3a78b06f8",
+    "category_id": "b0653c02-1ea6-4766-affd-46c2d0833c4b",
+    "transfer_account_id": null,
+    "deleted": false
+  },
+  {
+    "id": "f1e7f42a-b19e-495e-b453-5d14c50f730a",
+    "transaction_id": "51a277ba-0946-452c-851c-d71a1b526360",
+    "amount": -60000,
+    "memo": "",
+    "payee_id": null,
+    "category_id": "ef8a0f9c-953b-43d7-98bd-f796c8b92110",
+    "transfer_account_id": null,
+    "deleted": false
+  }
+]

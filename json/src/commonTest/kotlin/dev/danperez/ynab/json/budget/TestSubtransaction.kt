@@ -22,6 +22,13 @@ class TestSubtransaction: BaseJsonTest()
     }
 
     @Test
+    fun testSubtransactionsSerializes()
+    {
+        val source = "budget/Subtransactions.json".readBufferedSource()
+        val value = json.decodeFromBufferedSource<List<Subtransaction>>(source)
+    }
+
+    @Test
     fun testSubtransactionResponseSerializes()
     {
         val source = "budget/SubtransactionResponse.json".readBufferedSource()
