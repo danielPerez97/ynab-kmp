@@ -15,7 +15,6 @@ dependencies {
 
     testImplementation(libs.kotlin.coroutines.test)
     testImplementation(libs.okhttp.mockwebserver)
-    testImplementation(kotlin("test-junit5"))
     testImplementation(libs.junit.jupiter.api)
     runtimeOnly(libs.junit.jupiter.engine)
 }

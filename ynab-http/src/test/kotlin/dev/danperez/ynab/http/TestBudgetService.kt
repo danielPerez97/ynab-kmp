@@ -4,8 +4,8 @@ import dev.danperez.ynab.json.Response
 import dev.danperez.ynab.json.budget.Budget
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
-import kotlin.test.Test
-import kotlin.test.assertEquals
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class TestBudgetService: BaseServiceTest<BudgetService>(BudgetService::class.java)
 {

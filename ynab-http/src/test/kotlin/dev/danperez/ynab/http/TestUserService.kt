@@ -6,7 +6,6 @@ import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-@Suppress("JUnitMixedFramework")
 class TestUserService: BaseServiceTest<UserService>(UserService::class.java)
 {
 

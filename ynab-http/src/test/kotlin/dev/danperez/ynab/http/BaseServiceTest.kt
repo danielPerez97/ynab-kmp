@@ -9,11 +9,13 @@ import okhttp3.mockwebserver.MockWebServer
 import okio.BufferedSource
 import okio.buffer
 import okio.source
-import org.junit.After
+import org.junit.jupiter.api.AfterAll
+import org.junit.jupiter.api.TestInstance
 import retrofit2.Retrofit
 import java.nio.charset.StandardCharsets
 import java.util.concurrent.TimeUnit
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 abstract class BaseServiceTest<T>(`class`: Class<T>)
 {
     private val mockWebServer = MockWebServer()
@@ -36,7 +38,7 @@ abstract class BaseServiceTest<T>(`class`: Class<T>)
 
     val service: T = retrofit.create(`class`)
 
-    @After
+    @AfterAll
     fun tearDown() {
         mockWebServer.shutdown()
     }
