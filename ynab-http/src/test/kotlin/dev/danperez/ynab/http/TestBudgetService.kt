@@ -31,4 +31,13 @@ class TestBudgetService: BaseServiceTest<BudgetService>(BudgetService::class.jav
         require(response.data is Budget.BudgetData)
     }
 
+    @OptIn(ExperimentalCoroutinesApi::class)
+    @Test
+    fun testGetBudgetSettings() = runTest {
+        enqueueResponse("budget/BudgetSettings.json", 200)
+        val response = service.getBudgetSettings("fake budget id")
+
+        require(response is Response.Ok)
+    }
+
 }
