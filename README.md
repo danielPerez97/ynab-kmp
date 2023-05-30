@@ -66,8 +66,8 @@ https://api.ynab.com/v1#/
 - [ ] GET /budgets/{budget_id}/payees/{payee_id}/transactions
 
 ### Scheduled Transactions(ScheduledTransactionsService.kt)
-- [ ] GET /budgets/{budget_id}/scheduled_transactions
-- [ ] GET /budgets/{budget_id}/scheduled_transactions/{scheduled_transaction_id}
+- [X] GET /budgets/{budget_id}/scheduled_transactions
+- [X] GET /budgets/{budget_id}/scheduled_transactions/{scheduled_transaction_id}
 
 
 [1]: https://api.youneedabudget.com/#hello

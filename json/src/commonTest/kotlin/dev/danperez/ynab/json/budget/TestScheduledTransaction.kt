@@ -16,7 +16,7 @@ class TestScheduledTransaction: BaseJsonTest()
     fun testScheduledTransactionSerializes()
     {
         val source = "budget/ScheduledTransaction.json".readBufferedSource()
-        val value = json.decodeFromBufferedSource<ScheduledTransaction>(source)
+        val value = json.decodeFromBufferedSource<ScheduledTransactionLite>(source)
 
         assertEquals("My Scheduled Transaction ID", value.id)
     }
@@ -25,9 +25,9 @@ class TestScheduledTransaction: BaseJsonTest()
     fun testScheduledTransactionResponseSerializes()
     {
         val source = "budget/ScheduledTransactionResponse.json".readBufferedSource()
-        val valueResponse = json.decodeFromBufferedSource<Response<ScheduledTransaction>>(source)
+        val valueResponse = json.decodeFromBufferedSource<Response<ScheduledTransactionLite>>(source)
 
-        require(valueResponse is Response.Ok<ScheduledTransaction>)
+        require(valueResponse is Response.Ok<ScheduledTransactionLite>)
         assertEquals("My Scheduled Transaction ID", valueResponse.data.id)
     }
 }
