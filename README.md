@@ -18,7 +18,7 @@ To test, run the following:
 * Have the project be feature-complete enough to build an Android App that provides a widget to view a users age of money
 
 # Endpoint Checklist
-## https://api.ynab.com/v1#/
+https://api.ynab.com/v1#/
 
 ### User
 - [X] GET /user
