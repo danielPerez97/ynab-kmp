@@ -1,0 +1,15 @@
+{
+  "data": {
+    "month": {
+      "month": "string",
+      "note": "string",
+      "income": 0,
+      "budgeted": 0,
+      "activity": 0,
+      "to_be_budgeted": 0,
+      "age_of_money": 0,
+      "deleted": true,
+      "categories": []
+    }
+  }
+}

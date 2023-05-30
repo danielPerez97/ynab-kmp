@@ -13,5 +13,5 @@ data class Month(
     @SerialName("to_be_budgeted") val toBeBudgeted: Int,
     @SerialName("age_of_money") val ageOfMoney: Int,
     val deleted: Boolean,
-    val categories: List<Category>
+    val categories: List<Category> = emptyList(),
 )
