@@ -8,5 +8,8 @@ import retrofit2.http.Path
 interface AccountService
 {
     @GET("/budget/{budget_id}/accounts")
-    suspend fun getBudgetSettings(@Path("budget_id") budgetId: String): Response<List<Account>>
+    suspend fun getAccounts(@Path("budget_id") budgetId: String): Response<List<Account>>
+
+    @GET("/budget/{budget_id}/accounts/{account_id}")
+    suspend fun getAccountById(@Path("budget_id") budgetId: String, @Path("account_id") accountId: String): Response<Account>
 }

@@ -8,8 +8,14 @@ import org.junit.jupiter.api.Test
 class TestAccountService: BaseServiceTest<AccountService>(AccountService::class.java)
 {
     @Test
-    fun testGetBudgetSettings() = runTest {
+    fun testGetAccounts() = runTest {
+        enqueueResponse("account/Accounts.json", 200)
+        val response = service.getAccounts("fake budget id")
+    }
+
+    @Test
+    fun testGetAccountById() = runTest {
         enqueueResponse("account/Account.json", 200)
-        val response = service.getBudgetSettings("fake budget id")
+        val response = service.getAccountById("fake budget id", "fake account id")
     }
 }

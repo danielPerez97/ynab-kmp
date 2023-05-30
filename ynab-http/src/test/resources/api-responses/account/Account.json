@@ -1,39 +1,36 @@
 {
   "data": {
-    "accounts": [
-      {
-        "id": "string",
-        "name": "string",
-        "type": "checking",
-        "on_budget": true,
-        "closed": true,
-        "note": "string",
-        "balance": 0,
-        "cleared_balance": 0,
-        "uncleared_balance": 0,
-        "transfer_payee_id": "string",
-        "direct_import_linked": true,
-        "direct_import_in_error": true,
-        "last_reconciled_at": "2023-05-30T02:14:34.342Z",
-        "debt_original_balance": 0,
-        "debt_interest_rates": {
-          "additionalProp1": 0,
-          "additionalProp2": 0,
-          "additionalProp3": 0
-        },
-        "debt_minimum_payments": {
-          "additionalProp1": 0,
-          "additionalProp2": 0,
-          "additionalProp3": 0
-        },
-        "debt_escrow_amounts": {
-          "additionalProp1": 0,
-          "additionalProp2": 0,
-          "additionalProp3": 0
-        },
-        "deleted": true
-      }
-    ],
-    "server_knowledge": 0
+    "account": {
+      "id": "string",
+      "name": "string",
+      "type": "checking",
+      "on_budget": true,
+      "closed": true,
+      "note": "string",
+      "balance": 0,
+      "cleared_balance": 0,
+      "uncleared_balance": 0,
+      "transfer_payee_id": "string",
+      "direct_import_linked": true,
+      "direct_import_in_error": true,
+      "last_reconciled_at": "2023-05-30T02:58:39.788Z",
+      "debt_original_balance": 0,
+      "debt_interest_rates": {
+        "additionalProp1": 0,
+        "additionalProp2": 0,
+        "additionalProp3": 0
+      },
+      "debt_minimum_payments": {
+        "additionalProp1": 0,
+        "additionalProp2": 0,
+        "additionalProp3": 0
+      },
+      "debt_escrow_amounts": {
+        "additionalProp1": 0,
+        "additionalProp2": 0,
+        "additionalProp3": 0
+      },
+      "deleted": true
+    }
   }
 }
