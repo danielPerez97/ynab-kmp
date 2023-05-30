@@ -35,10 +35,10 @@ https://api.ynab.com/v1#/
 - [X] GET /budgets/{budget_id}/accounts/{account_id}
 
 ### Categories(CategoriesService.kt)
-- [ ] GET /budgets/{budget_id}/categories
-- [ ] GET /budgets/{budget_id}/categories/{category_id}
-- [ ] GET /budgets/{budget_id}/months/{month}/categories/{category_id}
-- [ ] PATCH /budgets/{budget_id}/months/{month}/categories/{category_id}
+- [X] GET /budgets/{budget_id}/categories
+- [X] GET /budgets/{budget_id}/categories/{category_id}
+- [X] GET /budgets/{budget_id}/months/{month}/categories/{category_id}
+- [X] PATCH /budgets/{budget_id}/months/{month}/categories/{category_id}
 
 ### Payees(PayeesServiceService.kt)
 - [X] GET /budgets/{budget_id}/payees

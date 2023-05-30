@@ -26,5 +26,6 @@ data class Category(
     @SerialName("goal_under_funded") val goalUnderFunded: Int?,
     @SerialName("goal_overall_funded") val goalOverallFunded: Int?,
     @SerialName("goal_overall_left") val goalOverallLeft: Int?,
-    val deleted: Boolean
+    val deleted: Boolean,
+    @SerialName("category_group_name") val categoryGroupName: String? = null
 )
