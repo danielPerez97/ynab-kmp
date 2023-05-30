@@ -1,0 +1,11 @@
+{
+  "data": {
+    "payees": {
+      "id": "string",
+      "name": "string",
+      "transfer_account_id": "string",
+      "deleted": true
+    },
+    "server_knowledge": 0
+  }
+}

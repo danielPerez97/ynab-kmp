@@ -19,4 +19,12 @@ class TestPayeesService: BaseServiceTest<PayeesService>(PayeesService::class.jav
         assertEquals(1, response.data.size)
     }
 
+    @Test
+    fun testGetPayeeById() = runTest {
+        enqueueResponse("payees/Payee.json", 200)
+        val response = service.getPayeesById("fake budget id", "payee id")
+
+        require(response is Response.Ok)
+    }
+
 }
