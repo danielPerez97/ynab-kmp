@@ -1,5 +1,6 @@
 package dev.danperez.ynab.json.budget
 
+import dev.danperez.ynab.json.OptionalProperty
 import dev.danperez.ynab.json.budget.internal.TransactionSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -7,7 +8,7 @@ import kotlinx.serialization.Serializable
 @Serializable(TransactionSerializer::class)
 sealed interface Transaction
 {
-    val id: String
+    val id: OptionalProperty<String>
     val date: String
     val amount: Int
     val memo: String?
@@ -17,18 +18,19 @@ sealed interface Transaction
     val accountId: String
     val payeeId: String?
     val categoryId: String?
-    val transferAccountId: String?
-    val transferTransactionId: String?
-    val matchedTransactionId: String?
+    val transferAccountId: OptionalProperty<String?>
+    val transferTransactionId: OptionalProperty<String?>
+    val matchedTransactionId: OptionalProperty<String?>
     val importId: String?
-    val importPayeeName: String?
-    val importPayeeNameOriginal: String?
+    val importPayeeName: OptionalProperty<String?>
+    val importPayeeNameOriginal: OptionalProperty<String?>
     val debtTransactionType: String?
-    val deleted: Boolean
+    val payeeName: String?
+    val subtransactions: OptionalProperty<List<Subtransaction>>
 
     @Serializable
     data class Lite(
-        override val id: String,
+        override val id: OptionalProperty<String> = OptionalProperty.NotPresent,
         override val date: String,
         override val amount: Int,
         override val memo: String?,
@@ -38,19 +40,21 @@ sealed interface Transaction
         @SerialName("account_id") override val accountId: String,
         @SerialName("payee_id") override val payeeId: String?,
         @SerialName("category_id") override val categoryId: String?,
-        @SerialName("transfer_account_id") override val transferAccountId: String?,
-        @SerialName("transfer_transaction_id") override val transferTransactionId: String?,
-        @SerialName("matched_transaction_id") override val matchedTransactionId: String?,
+        @SerialName("transfer_account_id") override val transferAccountId: OptionalProperty<String?> = OptionalProperty.NotPresent,
+        @SerialName("transfer_transaction_id") override val transferTransactionId: OptionalProperty<String?> = OptionalProperty.NotPresent,
+        @SerialName("matched_transaction_id") override val matchedTransactionId: OptionalProperty<String?> = OptionalProperty.NotPresent,
         @SerialName("import_id") override val importId: String?,
-        @SerialName("import_payee_name") override val importPayeeName: String?,
-        @SerialName("import_payee_name_original") override val importPayeeNameOriginal: String?,
-        @SerialName("debt_transaction_type") override val debtTransactionType: String?,
-        override val deleted: Boolean,
+        @SerialName("import_payee_name") override val importPayeeName: OptionalProperty<String?> = OptionalProperty.NotPresent,
+        @SerialName("import_payee_name_original") override val importPayeeNameOriginal: OptionalProperty<String?> = OptionalProperty.NotPresent,
+        @SerialName("debt_transaction_type") override val debtTransactionType: String? = null,
+        @SerialName("payee_name") override val payeeName: String? = null,
+        val deleted: Boolean? = null,
+        override val subtransactions: OptionalProperty<List<Subtransaction>> = OptionalProperty.NotPresent
     ): Transaction
 
     @Serializable
     data class TransactionFull(
-        override val id: String,
+        override val id: OptionalProperty<String> = OptionalProperty.NotPresent,
         override val date: String,
         override val amount: Int,
         override val memo: String?,
@@ -60,17 +64,17 @@ sealed interface Transaction
         @SerialName("account_id") override val accountId: String,
         @SerialName("payee_id") override val payeeId: String?,
         @SerialName("category_id") override val categoryId: String?,
-        @SerialName("transfer_account_id") override val transferAccountId: String?,
-        @SerialName("transfer_transaction_id") override val transferTransactionId: String?,
-        @SerialName("matched_transaction_id") override val matchedTransactionId: String?,
+        @SerialName("transfer_account_id") override val transferAccountId: OptionalProperty<String?>,
+        @SerialName("transfer_transaction_id") override val transferTransactionId: OptionalProperty<String?>,
+        @SerialName("matched_transaction_id") override val matchedTransactionId: OptionalProperty<String?>,
         @SerialName("import_id") override val importId: String?,
-        @SerialName("import_payee_name") override val importPayeeName: String?,
-        @SerialName("import_payee_name_original") override val importPayeeNameOriginal: String?,
-        @SerialName("debt_transaction_type") override val debtTransactionType: String?,
-        override val deleted: Boolean,
+        @SerialName("import_payee_name") override val importPayeeName: OptionalProperty<String?>,
+        @SerialName("import_payee_name_original") override val importPayeeNameOriginal: OptionalProperty<String?>,
+        @SerialName("debt_transaction_type") override val debtTransactionType: String? = null,
+        @SerialName("payee_name") override val payeeName: String? = null,
+        val deleted: Boolean? = null,
         @SerialName("account_name") val accountName: String,
-        @SerialName("payee_name") val payeeName: String,
         @SerialName("category_name") val categoryName: String,
-        val subtransactions: List<Subtransaction>
+        override val subtransactions: OptionalProperty<List<Subtransaction>> = OptionalProperty.NotPresent
     ): Transaction
 }

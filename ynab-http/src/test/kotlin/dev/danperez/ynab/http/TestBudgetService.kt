@@ -17,8 +17,8 @@ class TestBudgetService: BaseServiceTest<BudgetService>(BudgetService::class.jav
         val response = service.getBudgets()
 
         require(response is Response.Ok)
-        require(response.data.first() is Budget.BudgetData)
-        assertEquals(1, response.data.size)
+        require(response.data.budgets.first() is Budget.BudgetData)
+        assertEquals(1, response.data.budgets.size)
     }
 
     @OptIn(ExperimentalCoroutinesApi::class)

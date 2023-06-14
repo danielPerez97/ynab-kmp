@@ -9,36 +9,44 @@ import okhttp3.mockwebserver.MockWebServer
 import okio.BufferedSource
 import okio.buffer
 import okio.source
-import org.junit.jupiter.api.AfterAll
+import org.junit.jupiter.api.AfterEach
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.TestInstance
 import retrofit2.Retrofit
 import java.nio.charset.StandardCharsets
 import java.util.concurrent.TimeUnit
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
-abstract class BaseServiceTest<T>(`class`: Class<T>)
+@TestInstance(TestInstance.Lifecycle.PER_METHOD)
+abstract class BaseServiceTest<T: Any>(val serviceClass: Class<T>)
 {
-    private val mockWebServer = MockWebServer()
 
-    private val client = OkHttpClient.Builder()
-        .connectTimeout(1, TimeUnit.SECONDS)
-        .readTimeout(1, TimeUnit.SECONDS)
-        .writeTimeout(1, TimeUnit.SECONDS)
-        .build()
+    protected val mockWebServer = MockWebServer()
+    protected lateinit var service: T
 
-    private val mediaType = "application/json".toMediaType()
+    @BeforeEach
+    fun setup() {
+        val client = OkHttpClient.Builder()
+            .connectTimeout(1, TimeUnit.SECONDS)
+            .readTimeout(1, TimeUnit.SECONDS)
+            .writeTimeout(1, TimeUnit.SECONDS)
+            .build()
 
-    private val json = Json
+        val mediaType = "application/json; charset=utf-8".toMediaType()
 
-    private val retrofit = Retrofit.Builder()
-        .baseUrl(mockWebServer.url("/"))
-        .client(client)
-        .addConverterFactory(json.asConverterFactory(mediaType))
-        .build()
+        val json = Json {
+            prettyPrint = true
+        }
 
-    val service: T = retrofit.create(`class`)
+        val retrofit = Retrofit.Builder()
+            .baseUrl(mockWebServer.url("/"))
+            .client(client)
+            .addConverterFactory(json.asConverterFactory(mediaType))
+            .build()
 
-    @AfterAll
+        service = retrofit.create(serviceClass)
+    }
+
+    @AfterEach
     fun tearDown() {
         mockWebServer.shutdown()
     }
@@ -54,6 +62,10 @@ abstract class BaseServiceTest<T>(`class`: Class<T>)
                 .setResponseCode(code)
                 .setBody(source.readString(StandardCharsets.UTF_8))
         )
+    }
+
+    protected fun enqueueResponse(mockResponse: MockResponse) {
+        mockWebServer.enqueue(mockResponse)
     }
 
     private fun String.readBufferedSource(): BufferedSource {

@@ -1,6 +1,7 @@
 package dev.danperez.ynab.json.budget
 
 import dev.danperez.ynab.json.BaseJsonTest
+import dev.danperez.ynab.json.OptionalProperty
 import dev.danperez.ynab.json.readBufferedSource
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.okio.decodeFromBufferedSource
@@ -17,7 +18,8 @@ class TestTransaction: BaseJsonTest()
         val source = "budget/TransactionLite.json".readBufferedSource()
         val value = json.decodeFromBufferedSource<Transaction.Lite>(source)
 
-        assertEquals("My Transaction ID", value.id)
+        require(value.id is OptionalProperty.Present)
+        assertEquals("My Transaction ID", (value.id as OptionalProperty.Present).value)
     }
 
     @Test
@@ -27,6 +29,6 @@ class TestTransaction: BaseJsonTest()
         val valueResponse = json.decodeFromBufferedSource<Transaction>(source)
 
         require(valueResponse is Transaction.TransactionFull)
-        assertEquals("My TransactionFull ID", valueResponse.id)
+        assertEquals("My TransactionFull ID", (valueResponse.id as OptionalProperty.Present).value)
     }
 }

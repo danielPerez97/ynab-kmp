@@ -1,0 +1,36 @@
+{
+  "transaction_ids": [
+    "string"
+  ],
+  "transactions": [
+    {
+      "id": "string",
+      "date": "string",
+      "amount": 0,
+      "memo": "string",
+      "cleared": "cleared",
+      "approved": true,
+      "flag_color": "red",
+      "account_id": "string",
+      "payee_id": "string",
+      "category_id": "string",
+      "transfer_account_id": "string",
+      "transfer_transaction_id": "string",
+      "matched_transaction_id": "string",
+      "import_id": "string",
+      "import_payee_name": "string",
+      "import_payee_name_original": "string",
+      "debt_transaction_type": "payment",
+      "deleted": true,
+      "account_name": "string",
+      "payee_name": "string",
+      "category_name": "string",
+      "subtransactions": [
+      ]
+    }
+  ],
+  "duplicate_import_ids": [
+    "string"
+  ],
+  "server_knowledge": 0
+}
